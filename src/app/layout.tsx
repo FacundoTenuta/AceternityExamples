@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { useRouter } from 'next/router';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,6 +15,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const router = useRouter();
 	return (
 		<html lang="en">
 			<body
@@ -21,11 +23,16 @@ export default function RootLayout({
 					'min-h-screen min-w-screen bg-slate-800 flex flex-col justify-center items-center'
 				}
 			>
-				<div className="fixed top-4 left-4">
-					<a href="/" className="text-white font-bold text-2xl hover:text-slate-500">
-						←
-					</a>
-				</div>
+				{router.pathname !== '/' && (
+					<div className="fixed top-4 left-4">
+						<a
+							href="/"
+							className="text-white font-bold text-2xl hover:text-slate-500"
+						>
+							←
+						</a>
+					</div>
+				)}
 				{children}
 			</body>
 		</html>
