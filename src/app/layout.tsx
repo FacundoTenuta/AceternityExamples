@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { useRouter } from 'next/router';
+import { BackButton } from '@/components/BackButton';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +15,6 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	const router = useRouter();
 	return (
 		<html lang="en">
 			<body
@@ -23,16 +22,7 @@ export default function RootLayout({
 					'min-h-screen min-w-screen bg-slate-800 flex flex-col justify-center items-center'
 				}
 			>
-				{router.pathname !== '/' && (
-					<div className="fixed top-4 left-4">
-						<a
-							href="/"
-							className="text-white font-bold text-2xl hover:text-slate-500"
-						>
-							←
-						</a>
-					</div>
-				)}
+				<BackButton />
 				{children}
 			</body>
 		</html>
