@@ -30,6 +30,24 @@ export default function Home() {
 				>
 					3D Card Rotated
 				</Link>
+				<Link
+					href="/examples/sparkles"
+					className="bg-slate-500 text-white px-4 py-2 rounded-md transition-all duration-300 hover:bg-slate-600"
+				>
+					Sparkles
+				</Link>
+				<Link
+					href="/examples/sparkles-full"
+					className="bg-slate-500 text-white px-4 py-2 rounded-md transition-all duration-300 hover:bg-slate-600"
+				>
+					Sparkles Full
+				</Link>
+				<Link
+					href="/examples/background-gradient"
+					className="bg-slate-500 text-white px-4 py-2 rounded-md transition-all duration-300 hover:bg-slate-600"
+				>
+					Background Gradient
+				</Link>
 			</div>
 		</>
 	);
