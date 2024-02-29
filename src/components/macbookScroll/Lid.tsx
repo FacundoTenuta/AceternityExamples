@@ -1,6 +1,6 @@
 import { MotionValue, motion } from 'framer-motion';
 import Image from 'next/image';
-import { AceternityLogo } from './AceternityLogo';
+import { Logo } from './Logo';
 
 export const Lid = ({
 	scaleX,
@@ -32,7 +32,7 @@ export const Lid = ({
 					className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
 				>
 					<span className="text-white">
-						<AceternityLogo />
+						<Logo />
 					</span>
 				</div>
 			</div>
