@@ -18,6 +18,18 @@ export default function Home() {
 				>
 					Gemini Scroll
 				</Link>
+				<Link
+					href="/examples/3d-card"
+					className="bg-slate-500 text-white px-4 py-2 rounded-md transition-all duration-300 hover:bg-slate-600"
+				>
+					3D Card
+				</Link>
+				<Link
+					href="/examples/3d-card-rotated"
+					className="bg-slate-500 text-white px-4 py-2 rounded-md transition-all duration-300 hover:bg-slate-600"
+				>
+					3D Card Rotated
+				</Link>
 			</div>
 		</>
 	);
