@@ -1,7 +1,7 @@
 import { MacbookScroll } from '@/components/macbookScroll/MacbookScroll';
 
-const page = () => {
+const MacbookPage = () => {
 	return <MacbookScroll src="/assets/linear.webp" title="Macbook" />;
 };
 
-export default page;
+export default MacbookPage;

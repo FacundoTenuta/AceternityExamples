@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { useScroll, useTransform } from 'framer-motion';
 import { GoogleGeminiEffect } from '@/components/geminiScrollEffect/GoogleGeminiEffect';
 
-const page = () => {
+const GeminiPage = () => {
 	const ref = useRef(null);
 
 	const { scrollYProgress } = useScroll({
@@ -33,4 +33,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default GeminiPage;
