@@ -30,14 +30,8 @@ const CardPage = () => {
                         src='/assets/3dCard.webp'
                         height='1000'
                         width='1000'
-                        data-loaded='false'
-                        onLoad={(event) => {
-                            event.currentTarget.setAttribute(
-                                'data-loaded',
-                                'true'
-                            );
-                        }}
-                        className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
+                        placeholder='blur'
+                        className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl'
                         alt='thumbnail'
                     />
                 </CardItem>

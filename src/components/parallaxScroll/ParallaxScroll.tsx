@@ -51,14 +51,8 @@ export const ParallaxScroll = ({
                                 height='400'
                                 width='400'
                                 priority
-                                data-loaded='false'
-                                onLoad={(event) => {
-                                    event.currentTarget.setAttribute(
-                                        'data-loaded',
-                                        'true'
-                                    );
-                                }}
-                                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0 data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
+                                placeholder='blur'
+                                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
                             />
                         </motion.div>
@@ -75,14 +69,8 @@ export const ParallaxScroll = ({
                                 height='400'
                                 width='400'
                                 priority
-                                data-loaded='false'
-                                onLoad={(event) => {
-                                    event.currentTarget.setAttribute(
-                                        'data-loaded',
-                                        'true'
-                                    );
-                                }}
-                                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0 data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
+                                placeholder='blur'
+                                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
                             />
                         </motion.div>
@@ -99,14 +87,8 @@ export const ParallaxScroll = ({
                                 height='400'
                                 width='400'
                                 priority
-                                data-loaded='false'
-                                onLoad={(event) => {
-                                    event.currentTarget.setAttribute(
-                                        'data-loaded',
-                                        'true'
-                                    );
-                                }}
-                                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0 data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
+                                placeholder='blur'
+                                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
                             />
                         </motion.div>

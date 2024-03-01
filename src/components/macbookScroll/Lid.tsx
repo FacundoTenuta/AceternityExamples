@@ -53,11 +53,8 @@ export const Lid = ({
                     src={src as string}
                     alt='logo'
                     fill
-                    data-loaded='false'
-                    onLoad={(event) => {
-                        event.currentTarget.setAttribute('data-loaded', 'true');
-                    }}
-                    className='absolute inset-0 h-full w-full rounded-lg object-cover object-left-top data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
+                    placeholder='blur'
+                    className='absolute inset-0 h-full w-full rounded-lg object-cover object-left-top'
                 />
             </motion.div>
         </div>
