@@ -20,7 +20,14 @@ const FollowingPointerDemo = () => {
                             width='1000'
                             height='600'
                             priority
-                            className={`transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl `}
+                            data-loaded='false'
+                            onLoad={(event) => {
+                                event.currentTarget.setAttribute(
+                                    'data-loaded',
+                                    'true'
+                                );
+                            }}
+                            className='transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
                         />
                     </div>
                     <div className='p-4'>
@@ -69,7 +76,11 @@ const TitleComponent = ({
             height='20'
             width='20'
             alt='thumbnail'
-            className='aspect-square rounded-full border-2 border-white'
+            data-loaded='false'
+            onLoad={(event) => {
+                event.currentTarget.setAttribute('data-loaded', 'true');
+            }}
+            className='aspect-square rounded-full border-2 border-white data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
         />
         <p>{title}</p>
     </div>

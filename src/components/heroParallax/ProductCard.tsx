@@ -32,7 +32,11 @@ export const ProductCard = ({
                     src={product.thumbnail}
                     height='600'
                     width='600'
-                    className='absolute inset-0 h-full w-full object-cover object-left-top'
+                    data-loaded='false'
+                    onLoad={(event) => {
+                        event.currentTarget.setAttribute('data-loaded', 'true');
+                    }}
+                    className='absolute inset-0 h-full w-full object-cover object-left-top data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
                     alt={product.title}
                 />
             </Link>

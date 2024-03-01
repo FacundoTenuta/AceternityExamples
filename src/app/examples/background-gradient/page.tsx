@@ -12,7 +12,11 @@ const BackgroundGradientDemo = () => {
                     alt='jordans'
                     height='400'
                     width='400'
-                    className='object-contain'
+                    data-loaded='false'
+                    onLoad={(event) => {
+                        event.currentTarget.setAttribute('data-loaded', 'true');
+                    }}
+                    className='object-contain data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
                 />
                 <p className='mb-2 mt-4 text-base text-black sm:text-xl dark:text-neutral-200'>
                     Air Jordan 4 Retro Reimagined
