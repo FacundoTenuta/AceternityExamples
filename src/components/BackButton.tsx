@@ -3,17 +3,20 @@
 import { usePathname } from 'next/navigation';
 
 export const BackButton = () => {
-	const pathname = usePathname();
+    const pathname = usePathname();
 
-	if (pathname === '/') {
-		return null;
-	}
+    if (pathname === '/') {
+        return null;
+    }
 
-	return (
-		<div className="fixed top-4 left-4">
-			<a href="/" className="text-white font-bold text-2xl hover:text-slate-500">
-				←
-			</a>
-		</div>
-	);
+    return (
+        <div className='fixed left-4 top-4'>
+            <a
+                href='/'
+                className='text-2xl font-bold text-white hover:text-slate-500'
+            >
+                ←
+            </a>
+        </div>
+    );
 };
