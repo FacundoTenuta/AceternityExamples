@@ -21,6 +21,7 @@ const FollowingPointerDemo = () => {
                             height='600'
                             priority
                             placeholder='blur'
+                            blurDataURL={blogContent.image}
                             className='transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl'
                         />
                     </div>
@@ -71,6 +72,7 @@ const TitleComponent = ({
             width='20'
             alt='thumbnail'
             placeholder='blur'
+            blurDataURL={avatar}
             className='aspect-square rounded-full border-2 border-white'
         />
         <p>{title}</p>
