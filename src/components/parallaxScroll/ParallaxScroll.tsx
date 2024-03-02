@@ -51,8 +51,6 @@ export const ParallaxScroll = ({
                                 height='400'
                                 width='400'
                                 priority
-                                placeholder='blur'
-                                blurDataURL={el}
                                 className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
                             />
@@ -70,8 +68,6 @@ export const ParallaxScroll = ({
                                 height='400'
                                 width='400'
                                 priority
-                                placeholder='blur'
-                                blurDataURL={el}
                                 className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
                             />
@@ -89,8 +85,6 @@ export const ParallaxScroll = ({
                                 height='400'
                                 width='400'
                                 priority
-                                placeholder='blur'
-                                blurDataURL={el}
                                 className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
                             />

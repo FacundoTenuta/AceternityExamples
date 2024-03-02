@@ -53,7 +53,6 @@ export const Lid = ({
                     src={src as string}
                     alt='logo'
                     fill
-                    placeholder='blur'
                     className='absolute inset-0 h-full w-full rounded-lg object-cover object-left-top'
                 />
             </motion.div>

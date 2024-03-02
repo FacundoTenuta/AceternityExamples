@@ -22,7 +22,6 @@ const CardPage = () => {
                 </CardItem>
                 <CardItem translateZ='100' className='mt-4 w-full'>
                     <Image
-                        placeholder='blur'
                         className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl'
                         src='/assets/3dCard.webp'
                         height='1000'

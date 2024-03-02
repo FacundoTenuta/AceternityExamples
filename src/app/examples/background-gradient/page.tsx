@@ -12,7 +12,6 @@ const BackgroundGradientDemo = () => {
                     alt='jordans'
                     height='400'
                     width='400'
-                    placeholder='blur'
                     className='object-contain'
                 />
                 <p className='mb-2 mt-4 text-base text-black sm:text-xl dark:text-neutral-200'>
