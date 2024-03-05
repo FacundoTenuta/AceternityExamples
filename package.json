@@ -8,6 +8,8 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@heroicons/react": "^2.1.1",
+        "@radix-ui/react-slider": "^1.1.2",
         "@tabler/icons-react": "^2.47.0",
         "@tsparticles/engine": "^3.3.0",
         "@tsparticles/react": "^3.0.0",
