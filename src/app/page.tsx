@@ -90,6 +90,12 @@ export default function Home() {
                 >
                     Layout Grid
                 </Link>
+                <Link
+                    href='/examples/elastic-slider'
+                    className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
+                >
+                    Elastic Slider
+                </Link>
             </div>
         </>
     );
