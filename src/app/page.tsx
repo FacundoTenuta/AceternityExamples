@@ -96,6 +96,12 @@ export default function Home() {
                 >
                     Elastic Slider
                 </Link>
+                <Link
+                    href='/examples/animated-sticky-header'
+                    className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
+                >
+                    Animated Sticky Header
+                </Link>
             </div>
         </>
     );
