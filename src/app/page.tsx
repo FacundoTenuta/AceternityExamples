@@ -5,7 +5,7 @@ export default function Home() {
         <>
             <h1 className='text-4xl font-bold text-white'>Examples</h1>
 
-            <div className='mt-4 flex flex-col items-center gap-2'>
+            <div className='mt-4 grid grid-cols-3 items-center gap-2'>
                 <Link
                     href='/examples/macbook-scroll'
                     className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
