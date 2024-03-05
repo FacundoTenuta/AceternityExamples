@@ -108,6 +108,12 @@ export default function Home() {
                 >
                     Animated Number
                 </Link>
+                <Link
+                    href='/examples/multi-step-wizard'
+                    className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
+                >
+                    Multi Step Wizard
+                </Link>
             </div>
         </>
     );
