@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { useRef } from 'react';
 import { Header } from './Header';
 import { ProductCard } from './ProductCard';
+import { StaticImageData } from 'next/image';
 
 export const HeroParallax = ({
     products,
@@ -11,7 +12,7 @@ export const HeroParallax = ({
     products: {
         title: string;
         link: string;
-        thumbnail: string;
+        thumbnail: StaticImageData;
     }[];
 }) => {
     const firstRow = products.slice(0, 5);

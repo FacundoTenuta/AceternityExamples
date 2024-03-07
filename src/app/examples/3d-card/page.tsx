@@ -2,6 +2,7 @@ import { CardBody } from '@/components/3dCard/CardBody';
 import { CardContainer } from '@/components/3dCard/CardContainer';
 import { CardItem } from '@/components/3dCard/CardItem';
 import Image from 'next/image';
+import CardImage from '@/public/assets/3dCard.webp';
 
 const CardPage = () => {
     return (
@@ -23,10 +24,11 @@ const CardPage = () => {
                 <CardItem translateZ='100' className='mt-4 w-full'>
                     <Image
                         className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl'
-                        src='/assets/3dCard.webp'
+                        src={CardImage}
                         height='1000'
                         width='1000'
                         alt='thumbnail'
+                        placeholder='blur'
                     />
                 </CardItem>
                 <div className='mt-20 flex items-center justify-between'>

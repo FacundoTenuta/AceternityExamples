@@ -1,6 +1,10 @@
 'use client';
 
 import { LayoutGrid } from '@/components/layoutGrid/LayoutGrid';
+import Parallax1 from '@/public/assets/parallax1.avif';
+import Parallax2 from '@/public/assets/parallax2.avif';
+import Parallax3 from '@/public/assets/parallax3.avif';
+import Parallax4 from '@/public/assets/parallax4.avif';
 
 const SkeletonOne = () => {
     return (
@@ -60,25 +64,25 @@ const cards = [
         id: 1,
         content: <SkeletonOne />,
         className: 'md:col-span-2',
-        thumbnail: '/assets/parallax1.avif',
+        thumbnail: Parallax1,
     },
     {
         id: 2,
         content: <SkeletonTwo />,
         className: 'col-span-1',
-        thumbnail: '/assets/parallax2.avif',
+        thumbnail: Parallax2,
     },
     {
         id: 3,
         content: <SkeletonThree />,
         className: 'col-span-1',
-        thumbnail: '/assets/towers.avif',
+        thumbnail: Parallax3,
     },
     {
         id: 4,
         content: <SkeletonFour />,
         className: 'md:col-span-2',
-        thumbnail: '/assets/parallax7.avif',
+        thumbnail: Parallax4,
     },
 ];
 

@@ -2,14 +2,14 @@
 import { useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/utils/cn';
 
 export const ParallaxScroll = ({
     images,
     className,
 }: {
-    images: string[];
+    images: StaticImageData[];
     className?: string;
 }) => {
     const gridRef = useRef<any>(null);
@@ -53,6 +53,7 @@ export const ParallaxScroll = ({
                                 priority
                                 className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
+                                placeholder='blur'
                             />
                         </motion.div>
                     ))}
@@ -70,6 +71,7 @@ export const ParallaxScroll = ({
                                 priority
                                 className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
+                                placeholder='blur'
                             />
                         </motion.div>
                     ))}
@@ -87,6 +89,7 @@ export const ParallaxScroll = ({
                                 priority
                                 className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
                                 alt='thumbnail'
+                                placeholder='blur'
                             />
                         </motion.div>
                     ))}

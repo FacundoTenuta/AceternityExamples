@@ -1,5 +1,6 @@
 import { FollowerPointerCard } from '@/components/followingPointer/FollowerPointerCard';
 import Image from 'next/image';
+import Towers from '@/public/assets/towers.avif';
 
 const FollowingPointerDemo = () => {
     return (
@@ -8,7 +9,7 @@ const FollowingPointerDemo = () => {
                 title={
                     <TitleComponent
                         title={blogContent.author}
-                        avatar={blogContent.authorAvatar}
+                        avatar={blogContent.authorAvatar.src}
                     />
                 }
             >
@@ -52,8 +53,8 @@ const blogContent = {
     title: 'Amazing Tailwindcss Grid Layout Examples',
     description:
         'Grids are cool, but Tailwindcss grids are cooler. In this article, we will learn how to create amazing Grid layouts with Tailwindcs grid and React.',
-    image: '/assets/towers.avif',
-    authorAvatar: '/assets/towers.avif',
+    image: Towers,
+    authorAvatar: Towers,
 };
 
 const TitleComponent = ({

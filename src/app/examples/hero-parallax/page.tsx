@@ -1,85 +1,100 @@
 'use client';
 import { HeroParallax } from '@/components/heroParallax/HeroParallax';
 import React from 'react';
+import Moonbeam from '@/public/assets/moonbeam.png';
+import Cursor from '@/public/assets/cursor.png';
+import Rogue from '@/public/assets/rogue.png';
+import Editorially from '@/public/assets/editorially.png';
+import Editrix from '@/public/assets/editrix.png';
+import PixelPerfect from '@/public/assets/pixelperfect.png';
+import Algochurn from '@/public/assets/algochurn.png';
+import AceternityUI from '@/public/assets/aceternityui.png';
+import TailwindMasterKit from '@/public/assets/tailwindmasterkit.png';
+import SmartBridge from '@/public/assets/smartbridge.png';
+import Renderwork from '@/public/assets/renderwork.png';
+import CremeDigital from '@/public/assets/cremedigital.png';
+import GoldenBellsAcademy from '@/public/assets/goldenbellsacademy.png';
+import Invoker from '@/public/assets/invoker.png';
+import EFreeInvoice from '@/public/assets/efreeinvoice.png';
 
 const products = [
     {
         title: 'Moonbeam',
         link: 'https://gomoonbeam.com',
-        thumbnail: '/assets/moonbeam.png',
+        thumbnail: Moonbeam,
     },
     {
         title: 'Cursor',
         link: 'https://cursor.so',
-        thumbnail: '/assets/cursor.png',
+        thumbnail: Cursor,
     },
     {
         title: 'Rogue',
         link: 'https://userogue.com',
-        thumbnail: '/assets/rogue.png',
+        thumbnail: Rogue,
     },
 
     {
         title: 'Editorially',
         link: 'https://editorially.org',
-        thumbnail: '/assets/editorially.png',
+        thumbnail: Editorially,
     },
     {
         title: 'Editrix AI',
         link: 'https://editrix.ai',
-        thumbnail: '/assets/editrix.png',
+        thumbnail: Editrix,
     },
     {
         title: 'Pixel Perfect',
         link: 'https://app.pixelperfect.quest',
-        thumbnail: '/assets/pixelperfect.png',
+        thumbnail: PixelPerfect,
     },
 
     {
         title: 'Algochurn',
         link: 'https://algochurn.com',
-        thumbnail: '/assets/algochurn.png',
+        thumbnail: Algochurn,
     },
     {
         title: 'Aceternity UI',
         link: 'https://ui.aceternity.com',
-        thumbnail: '/assets/aceternityui.png',
+        thumbnail: AceternityUI,
     },
     {
         title: 'Tailwind Master Kit',
         link: 'https://tailwindmasterkit.com',
-        thumbnail: '/assets/tailwindmasterkit.png',
+        thumbnail: TailwindMasterKit,
     },
     {
         title: 'SmartBridge',
         link: 'https://smartbridgetech.com',
-        thumbnail: '/assets/smartbridge.png',
+        thumbnail: SmartBridge,
     },
     {
         title: 'Renderwork Studio',
         link: 'https://renderwork.studio',
-        thumbnail: '/assets/renderwork.png',
+        thumbnail: Renderwork,
     },
 
     {
         title: 'Creme Digital',
         link: 'https://cremedigital.com',
-        thumbnail: '/assets/cremedigital.png',
+        thumbnail: CremeDigital,
     },
     {
         title: 'Golden Bells Academy',
         link: 'https://goldenbellsacademy.com',
-        thumbnail: '/assets/goldenbellsacademy.png',
+        thumbnail: GoldenBellsAcademy,
     },
     {
         title: 'Invoker Labs',
         link: 'https://invoker.lol',
-        thumbnail: '/assets/invoker.png',
+        thumbnail: Invoker,
     },
     {
         title: 'E Free Invoice',
         link: 'https://efreeinvoice.com',
-        thumbnail: '/assets/efreeinvoice.png',
+        thumbnail: EFreeInvoice,
     },
 ];
 

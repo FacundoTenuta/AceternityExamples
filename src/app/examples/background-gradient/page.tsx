@@ -2,17 +2,19 @@
 import React from 'react';
 import Image from 'next/image';
 import { BackgroundGradient } from '@/components/backgroundGradient/BackgroundGradient';
+import JordansImage from '@/public/assets/jordans.webp';
 
 const BackgroundGradientDemo = () => {
     return (
         <div>
             <BackgroundGradient className='max-w-sm rounded-[22px] bg-white p-4 sm:p-10 dark:bg-zinc-900'>
                 <Image
-                    src='/assets/jordans.webp'
+                    src={JordansImage}
                     alt='jordans'
                     height='400'
                     width='400'
                     className='object-contain'
+                    placeholder='blur'
                 />
                 <p className='mb-2 mt-4 text-base text-black sm:text-xl dark:text-neutral-200'>
                     Air Jordan 4 Retro Reimagined

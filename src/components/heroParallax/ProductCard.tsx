@@ -1,5 +1,5 @@
 import { motion, MotionValue } from 'framer-motion';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 export const ProductCard = ({
@@ -9,7 +9,7 @@ export const ProductCard = ({
     product: {
         title: string;
         link: string;
-        thumbnail: string;
+        thumbnail: StaticImageData;
     };
     translate: MotionValue<number>;
 }) => {
@@ -34,6 +34,7 @@ export const ProductCard = ({
                     width='600'
                     className='absolute inset-0 h-full w-full object-cover object-left-top'
                     alt={product.title}
+                    placeholder='blur'
                 />
             </Link>
             <div className='pointer-events-none absolute inset-0 h-full w-full bg-black opacity-0 group-hover/product:opacity-80'></div>

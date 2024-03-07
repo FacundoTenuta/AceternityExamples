@@ -1,5 +1,5 @@
 import { MotionValue, motion } from 'framer-motion';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { Logo } from './Logo';
 
 export const Lid = ({
@@ -13,7 +13,7 @@ export const Lid = ({
     scaleY: MotionValue<number>;
     rotate: MotionValue<number>;
     translate: MotionValue<number>;
-    src?: string;
+    src: StaticImageData;
 }) => {
     return (
         <div className='relative [perspective:800px]'>
@@ -50,10 +50,11 @@ export const Lid = ({
             >
                 <div className='absolute inset-0 rounded-lg bg-[#272729]' />
                 <Image
-                    src={src as string}
+                    src={src}
                     alt='logo'
                     fill
                     className='absolute inset-0 h-full w-full rounded-lg object-cover object-left-top'
+                    placeholder='blur'
                 />
             </motion.div>
         </div>

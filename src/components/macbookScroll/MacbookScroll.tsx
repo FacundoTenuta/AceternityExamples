@@ -6,6 +6,7 @@ import { Lid } from '@/components/macbookScroll/Lid';
 import { SpeakerGrid } from '@/components/macbookScroll/SpeakerGrid';
 import { Keypad } from '@/components/macbookScroll/Keypad';
 import { Trackpad } from '@/components/macbookScroll/Trackpad';
+import { StaticImageData } from 'next/image';
 
 export const MacbookScroll = ({
     src,
@@ -13,7 +14,7 @@ export const MacbookScroll = ({
     title,
     badge,
 }: {
-    src?: string;
+    src: StaticImageData;
     showGradient?: boolean;
     title?: string | React.ReactNode;
     badge?: React.ReactNode;
