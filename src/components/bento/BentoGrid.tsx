@@ -8,7 +8,6 @@ interface BentoGridProps {
     rows?: number;
     childrenClassName?: string;
     childrenStyle?: React.CSSProperties;
-    roundedSizeItems?: number;
     children?: ReactElement | ReactElement[];
 }
 

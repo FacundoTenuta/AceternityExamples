@@ -23,7 +23,7 @@ export const BentoGridItem = ({
 }) => (
     <div
         className={cn(
-            'shadow-input flex flex-col justify-between space-y-4 overflow-hidden rounded-xl bg-white',
+            'flex flex-col justify-between overflow-hidden rounded-xl',
             className
         )}
         style={{
