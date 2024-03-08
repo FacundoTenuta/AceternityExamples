@@ -132,6 +132,12 @@ export default function Home() {
                 >
                     Staggered Reveal
                 </Link>
+                <Link
+                    href='/examples/bento'
+                    className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
+                >
+                    Bento Grid
+                </Link>
             </div>
         </>
     );
