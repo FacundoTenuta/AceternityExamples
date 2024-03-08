@@ -25,7 +25,7 @@ export default function StaggeredReveal() {
                         alt=''
                         placeholder='blur'
                         blurSize={20}
-                        className='h-60 w-80 transform rounded-lg'
+                        className='h-60 w-80 rounded-lg'
                     />
                     <div className='flex flex-1 flex-col'>
                         <h2 className='text-balance text-lg font-bold text-slate-100'>
