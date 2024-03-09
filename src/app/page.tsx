@@ -138,6 +138,12 @@ export default function Home() {
                 >
                     Bento Grid
                 </Link>
+                <Link
+                    href='/examples/dock-effect'
+                    className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
+                >
+                    Dock Effect
+                </Link>
             </div>
         </>
     );
