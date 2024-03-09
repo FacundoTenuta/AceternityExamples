@@ -10,13 +10,11 @@ export const BackButton = () => {
     }
 
     return (
-        <div className='fixed left-4 top-4'>
-            <a
-                href='/'
-                className='text-2xl font-bold text-white hover:text-slate-500'
-            >
-                ←
-            </a>
-        </div>
+        <a
+            href='/'
+            className='fixed left-5 top-5 z-20 flex aspect-square h-10 w-10 items-center justify-center rounded-full bg-slate-400 bg-opacity-50 p-2 text-2xl font-bold text-white shadow-sm transition-all duration-300 hover:scale-125 hover:bg-slate-500 hover:bg-opacity-50 hover:shadow-xl'
+        >
+            ←
+        </a>
     );
 };
