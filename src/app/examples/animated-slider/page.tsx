@@ -57,6 +57,20 @@ const AnimatedSliderDemo = () => {
         index: 0,
     });
 
+    const handleOnClickSlide = (index: number) => {
+        setData((prev) => [...prev.slice(0, index), ...prev.slice(index + 1)]);
+        const newTransitionData = data[index];
+        const newCurrentSlideData = { data: newTransitionData, index };
+        setTransitionData(newTransitionData);
+        setCurrentSlideData(newCurrentSlideData);
+        setTimeout(() => {
+            setData((prev) => [
+                ...prev,
+                transitionData ? transitionData : initData,
+            ]);
+        }, 500);
+    };
+
     return (
         <div
             className={
@@ -78,7 +92,7 @@ const AnimatedSliderDemo = () => {
                             />
                         </div>
                         <div className='col-span-6 flex h-full flex-1 flex-col justify-start p-4 md:justify-center md:p-10'>
-                            <Slides data={data} />
+                            <Slides onClick={handleOnClickSlide} data={data} />
                             <Controls
                                 currentSlideData={currentSlideData}
                                 data={data}

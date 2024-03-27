@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 
 interface SliderCardProps {
     data: any;
+    onClick?: () => void;
 }
 
-export const SliderCard: FC<SliderCardProps> = ({ data }) => {
+export const SliderCard: FC<SliderCardProps> = ({ data, onClick }) => {
     return (
         <motion.div
-            className='relative h-52 min-w-[250px] rounded-2xl shadow-md md:h-80 md:min-w-[208px]'
+            onClick={onClick}
+            className='relative h-52 min-w-[250px] cursor-pointer rounded-2xl shadow-md md:h-80 md:min-w-[208px]'
             layout
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{
