@@ -1,11 +1,12 @@
+import { FC } from 'react';
 import { SliderCard } from './SliderCard';
 import { Data } from './types';
 
-type Props = {
+interface SlidesProps {
     data: Data[];
-};
+}
 
-function Slides({ data }: Props) {
+export const Slides: FC<SlidesProps> = ({ data }) => {
     return (
         <div className='flex w-full gap-6'>
             {data.map((data) => {
@@ -13,6 +14,4 @@ function Slides({ data }: Props) {
             })}
         </div>
     );
-}
-
-export default Slides;
+};

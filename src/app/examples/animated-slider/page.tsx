@@ -4,7 +4,7 @@ import { BackgroundImage } from '@/components/animatedSlider/BackgroundImage';
 import { Controls } from '@/components/animatedSlider/Controls';
 import { Header } from '@/components/animatedSlider/Header';
 import { SlideInfo } from '@/components/animatedSlider/SlideInfo';
-import Slides from '@/components/animatedSlider/Slides';
+import { Slides } from '@/components/animatedSlider/Slides';
 import { CurrentSlideData, Data } from '@/components/animatedSlider/types';
 import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
