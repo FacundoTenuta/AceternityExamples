@@ -150,6 +150,12 @@ export default function Home() {
                 >
                     Animated Slider
                 </Link>
+                <Link
+                    href='/examples/fluid-background'
+                    className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
+                >
+                    Fluid Background
+                </Link>
             </div>
         </>
     );
