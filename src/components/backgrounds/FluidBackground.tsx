@@ -105,6 +105,7 @@ export const FluidBackground = () => {
     };
 
     const handleTouchEvent = (event: TouchEvent) => {
+        event.stopPropagation();
         if (event.touches.length === 1) {
             const touch = event.touches[0];
             const mouseEvent = new MouseEvent('mousemove', {
