@@ -19,6 +19,7 @@ const config: Config = {
             animation: {
                 scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
                 'skew-scroll': 'skew-scroll 20s linear infinite',
+                orbit: 'orbit calc(var(--duration)*1s) linear infinite',
             },
             keyframes: {
                 scroll: {
@@ -34,6 +35,16 @@ const config: Config = {
                     '100%': {
                         transform:
                             'rotatex(20deg) rotateZ(-20deg) skewX(20deg) translateZ(0) translateY(-100%)',
+                    },
+                },
+                orbit: {
+                    '0%': {
+                        transform:
+                            'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)',
+                    },
+                    '100%': {
+                        transform:
+                            'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)',
                     },
                 },
             },

@@ -162,6 +162,12 @@ export default function Home() {
                 >
                     Animated List
                 </Link>
+                <Link
+                    href='/examples/orbiting-circles'
+                    className='rounded-md bg-slate-500 px-4 py-2 text-white transition-all duration-300 hover:bg-slate-600'
+                >
+                    Orbiting Circles
+                </Link>
             </div>
         </>
     );
