@@ -5,7 +5,7 @@ import Linear from '@/public/assets/linear.webp';
 const BorderBeamDemo = () => {
     return (
         <div className='relative flex h-full items-center justify-center rounded-xl'>
-            <div className='hidden w-[700px] rounded-[inherit] border object-contain shadow-lg dark:block'>
+            <div className='hidden w-[700px] rounded-[inherit] border border-slate-500 object-contain shadow-lg dark:block'>
                 <Image
                     className='rounded-[inherit]'
                     src={Linear}
