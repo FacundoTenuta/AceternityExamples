@@ -20,6 +20,8 @@ const config: Config = {
                 scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
                 'skew-scroll': 'skew-scroll 20s linear infinite',
                 orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+                'border-beam':
+                    'border-beam calc(var(--duration)*1s) infinite linear',
             },
             keyframes: {
                 scroll: {
@@ -45,6 +47,11 @@ const config: Config = {
                     '100%': {
                         transform:
                             'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)',
+                    },
+                },
+                'border-beam': {
+                    '100%': {
+                        'offset-distance': '100%',
                     },
                 },
             },
